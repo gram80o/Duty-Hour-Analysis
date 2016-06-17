@@ -1,0 +1,20 @@
+﻿TestLabor
+
+
+winexe
+C#
+.cs
+C:\_Development\Source Code\TestLabor\TestLabor\obj\Debug\
+TestLabor
+none
+false
+DEBUG;TRACE
+C:\_Development\Source Code\TestLabor\TestLabor\App.xaml
+7403762658
+
+19-82028731
+131254293103
+Controls\AdministrativeViewControl.xaml;Controls\EmployeeCardControl.xaml;Controls\EmployeeScheduleControl.xaml;DictionaryStyles.xaml;MainWindow.xaml;Windows\DutyHourAnalysisResultsDisplay.xaml;Windows\EmployeeSchedule.xaml;
+
+False
+

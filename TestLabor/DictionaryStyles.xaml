@@ -1,0 +1,90 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:TestLabor">
+
+    <!--Default Styles-->
+    <!--TextBlock Default Style-->
+    <Style TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="13" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>
+
+    <!--MenuItem Default Style-->
+    <Style TargetType="MenuItem">
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="13" />
+    </Style>
+
+    <!--Button Default Style-->
+    <Style TargetType="Button">
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="11" />
+    </Style>
+
+
+    <!--Data Grid Default Style-->
+    <Style TargetType="DataGrid">
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="13" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="IsReadOnly" Value="True" />
+        <Setter Property="AutoGenerateColumns" Value="False" />
+        <Setter Property="GridLinesVisibility" Value="None" />
+        <Setter Property="CanUserAddRows" Value="False" />
+        <Setter Property="CanUserDeleteRows" Value="False" />
+        <Setter Property="CanUserResizeRows" Value="False" />
+        <Setter Property="AlternatingRowBackground" Value="#FFECF7FF" />
+        <Setter Property="SelectionMode" Value="Single" />
+        <Style.Resources>
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#FF80AEFF" />
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="Black" />
+        </Style.Resources>
+    </Style>
+
+    <!--Data Grid Row Default Style-->
+    <Style TargetType="DataGridRow">
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="13" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="CornflowerBlue" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <!--Targeted Styles-->
+    <!--Tool Bar Buttons-->
+    <Style x:Key="ToolbarButtons" TargetType="Button">
+        <Setter Property="Width" Value="120" />
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Margin" Value="2" />
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="11" />        
+    </Style>
+
+    <Style x:Key="ToolbarButtonsRun" TargetType="Button">
+        <Setter Property="Width" Value="120" />
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Margin" Value="2" />
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="11" />
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF9CE4A0" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Opacity" Value="0.4" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+</ResourceDictionary>
